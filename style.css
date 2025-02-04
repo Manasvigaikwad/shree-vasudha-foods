@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+#hero{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("http://shreevasudhafoods.com/manasvi/Shree Vasudha Foods/df2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(80%);
+}
+
+#hero_content{
+    position: relative;
+    text-align: center;
+    top: 35%;
+}
+
+#hero_content h1{
+    color: #fff;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#hero_content h2{
+    color: #fff;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px #000;
+}
+#btn {
+    margin-bottom: -2rem; 
+    margin-top: 0.2rem; 
+    background-color: rgb(229, 239, 240)
+}
+
+#hero_content a:hover{
+    background: navy;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    line-height: 70px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background: orange;
+}
+
+#navbar h1{
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 2px 2px 2px #000;
+    font-family: cursive;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: 3px 15px 3px 15px;
+}
+
+#navbar ul li a:hover,#mobile_menu ul li:hover{
+    background: navy;
+    cursor: pointer;
+}
+
+#navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#phone a {
+    color: #fff;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid orange;
+    background: rgb(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+#phone a:hover{
+    background: navy;
+}
+
+#mobile_menu{
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: magenta;
+}
+
+#mobile_menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+#mobile_menu ul li{
+    list-style: none;
+    padding: 0 5px 0 5px;
+}
+
+#mobile_menu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    
+    #mobile_menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0, 0.5);
+        z-index: 1;
+        overflow-y: auto;
+    }
+
+    #navbar ul{
+        display: none;
+    }    
+}
+
+#menu{
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+
+#section{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana;
+}
+
+#menu row{
+    display: flex;
+    padding: 0 100px 0 100px;
+}
+
+#menu col{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 1px solid #bbb;
+    background-color: #fff;
+    margin: 5px;
+}
+
+#menu col h2{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+}
+
+.dropdown, .quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.dropdown select {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.dropdown span {
+    background-color: #FF6827;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.quantity-selector button {
+    background-color: #FF6827;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.quantity-selector input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+.add-to-cart {
+    background-color: #FF6827;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* General Styling */

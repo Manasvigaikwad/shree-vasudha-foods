@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="menu">
+            <div id="menu_row" style="display: flex;padding: 0 100px 0 100px;">
+                <div class="menu_column" style="box-shadow: 2px 2px 2px #bbb;border: 1px solid #bbb;background-color: #fff;margin: 5px;">
+            <h1 style="background-color: orange;color: #fff;text-align: center;padding: 5px;font-family: cursive;">Namkeen Classic</h1>
+            <div class="box">
+                <div id="images">
+                    <img src="http://shreevasudhafoods.com/manasvi/Shree Vasudha Foods/chakali.jpg" alt="Chakli"  style="width: 150px;height: 150px;border-radius: 50%;padding: 5px;border: 2px solid orange;">
+                </div>
+                <div style="padding: 10px;">
+                    <h2>Chakli</h2>
+                    <p>Chakli is a crispy and savory Indian snack made from rice flour and gram flour. The dough is seasoned with spices, shaped into spirals using a chakli maker, and deep-fried until golden brown. It's crunchy, flavorful, and perfect for festive occasions or tea-time munching!</p>
+                    <h3>Price: ₹143 
+                        230 gram
+                    </h3>
+                    <div class="dropdown">
+                        <select>
+                            <option>5 pieces</option>
+                            <option>10 pieces</option>
+                            <option>15 pieces</option>
+                        </select>
+                        <span>▼</span>
+                    </div>
+                
+                    <div class="quantity-selector" style="width: 40px;text-align: center;border: none;font-size: 16px;">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <input type="text" id="quantity" value="1" readonly>
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
+                
+                    <button class="add-to-cart" style="background-color: #FF6827;color: white;border: none;padding: 15px 40px;font-size: 18px;border-radius: 25px;cursor: pointer;text-transform: uppercase;font-weight: bold;">Add to Cart</button>
+                
+                    <script>
+                        function increaseQuantity() {
+                            let qty = document.getElementById('quantity');
+                            qty.value = parseInt(qty.value) + 1;
+                        }
+                
+                        function decreaseQuantity() {
+                            let qty = document.getElementById('quantity');
+                            if (parseInt(qty.value) > 1) {
+                                qty.value = parseInt(qty.value) - 1;
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="box">
+                <div id="images1">
+                    <img src="http://shreevasudhafoods.com/manasvi/Shree Vasudha Foods/chivda.jpg" alt="Chivda"  style="width: 150px;height: 150px;border-radius: 50%;padding: 5px;border: 2px solid orange;">
+                </div>
+                <div style="padding: 10px;">
+                    <h3>Chivda</h3>
+                    <p>Chivda is a light and crunchy Indian snack mix made from flattened rice (poha), nuts, spices, and sometimes sev. It is typically seasoned with turmeric, salt, chili powder, and mustard seeds, creating a flavorful and savory treat. Perfect for munching any time!</p>
+                    <h4>Price: ₹152 
+                        130 gram
+                    </h4>
+                    <div class="dropdown">
+                        <select>
+                            <option>5 pieces</option>
+                            <option>10 pieces</option>
+                            <option>15 pieces</option>
+                        </select>
+                    </div>
+                
+                    <div class="quantity-selector" style="width: 40px;text-align: center;border: none;font-size: 16px;">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <input type="text" id="quantity" value="1" readonly>
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
+                
+                    <button class="add-to-cart" style="background-color: #FF6827;color: white;border: none;padding: 15px 40px;font-size: 18px;border-radius: 25px;cursor: pointer;text-transform: uppercase;font-weight: bold;">Add to Cart</button>
+                
+                    <script>
+                        function increaseQuantity() {
+                            let qty = document.getElementById('quantity');
+                            qty.value = parseInt(qty.value) + 1;
+                        }
+                
+                        function decreaseQuantity() {
+                            let qty = document.getElementById('quantity');
+                            if (parseInt(qty.value) > 1) {
+                                qty.value = parseInt(qty.value) - 1;
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="box">
+                    <div id="images">
+                        <img src="http://shreevasudhafoods.com/manasvi/Shree Vasudha Foods/Aloo-wadi.jpg" alt="Aloo wadi"  style="width: 150px;height: 150px;border-radius: 50%;padding: 5px;border: 2px solid orange;">
+                    </div>
+                    <div style="padding: 10px;">
+                        <h2>Aloo wadi</h2>
+                        <p>Aloo Wadi is a delicious Maharashtrian snack made from colocasia leaves (aloo) and a spiced gram flour (besan) paste. The leaves are coated with the paste, rolled, steamed, sliced, and then fried until crispy. It's a savory and flavorful treat, often enjoyed during festive occasions.</p>
+                        <h3>Price: ₹200 
+                            Pieces:7
+                        </h3>
+                        <div class="dropdown" >
+                            <select>
+                                <option>5 pieces</option>
+                                <option>10 pieces</option>
+                                <option>15 pieces</option>
+                            </select>
+                        </div>
+                    
+                        <div class="quantity-selector" style="width: 40px;text-align: center;border: none;font-size: 16px;">
+                            <button onclick="decreaseQuantity()">-</button>
+                            <input type="text" id="quantity" value="1" readonly>
+                            <button onclick="increaseQuantity()">+</button>
+                        </div>
+                    
+                        <button class="add-to-cart" style="background-color: #FF6827;color: white;border: none;padding: 15px 40px;font-size: 18px;border-radius: 25px;cursor: pointer;text-transform: uppercase;font-weight: bold;">Add to Cart</button>
+                    
+                        <script>
+                            function increaseQuantity() {
+                                let qty = document.getElementById('quantity');
+                                qty.value = parseInt(qty.value) + 1;
+                            }
+                    
+                            function decreaseQuantity() {
+                                let qty = document.getElementById('quantity');
+                                if (parseInt(qty.value) > 1) {
+                                    qty.value = parseInt(qty.value) - 1;
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="images1">
+                        <img src="http://shreevasudhafoods.com/manasvi/Shree Vasudha Foods/wadi.jpg" alt="Kothimbir Wadi"  style="width: 150px;height: 150px;border-radius: 50%;padding: 5px;border: 2px solid orange;">
+                    </div>
+                    <div style="padding: 10px;">
+                        <h3>Kothimbir Wadi</h3>
+                        <p>Kothimbir Wadi is a flavorful Maharashtrian snack made from coriander leaves (kothimbir), gram flour (besan), and spices. The mixture is steamed, then cut into pieces and shallow-fried until crispy. Perfect as an appetizer or snack!</p>
+                        <h4>Price: ₹200
+                            Pieces: 7
+                        </h4>
+                        <div class="dropdown">
+                            <select>
+                                <option>5 pieces</option>
+                                <option>10 pieces</option>
+                                <option>15 pieces</option>
+                            </select>
+                            <span>▼</span>
+                        </div>
+                    
+                        <div class="quantity-selector" style="width: 40px;text-align: center;border: none;font-size: 16px;">
+                            <button onclick="decreaseQuantity()">-</button>
+                            <input type="text" id="quantity" value="1" readonly>
+                            <button onclick="increaseQuantity()">+</button>
+                        </div>
+                    
+                        <button class="add-to-cart" style="background-color: #FF6827;color: white;border: none;padding: 15px 40px;font-size: 18px;border-radius: 25px;cursor: pointer;text-transform: uppercase;font-weight: bold;">Add to Cart</button>
+                    
+                        <script>
+                            function increaseQuantity() {
+                                let qty = document.getElementById('quantity');
+                                qty.value = parseInt(qty.value) + 1;
+                            }
+                    
+                            function decreaseQuantity() {
+                                let qty = document.getElementById('quantity');
+                                if (parseInt(qty.value) > 1) {
+                                    qty.value = parseInt(qty.value) - 1;
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="images1">
+                        <img src="http://shreevasudhafoods.com/manasvi/Shree Vasudha Foods/thalipeet.jpg" alt="Thalipeet"  style="width: 150px;height: 150px;border-radius: 50%;padding: 5px;border: 2px solid orange;">
+                    </div>
+                    <div style="padding: 10px;">
+                        <h3>Thalipeet</h3>
+                        <p>Thalipeeth is a Maharashtrian flatbread made from multigrain flours and spices. It's crispy and nutritious!</p>
+                        <h4>Price: ₹200
+                            Pieces: 7
+                        </h4>
+                        <div class="dropdown">
+                            <select>
+                                <option>5 pieces</option>
+                                <option>10 pieces</option>
+                                <option>15 pieces</option>
+                            </select>
+                            <span>▼</span>
+                        </div>
+                    
+                        <div class="quantity-selector" style="width: 40px;text-align: center;border: none;font-size: 16px;">
+                            <button onclick="decreaseQuantity()">-</button>
+                            <input type="text" id="quantity" value="1" readonly>
+                            <button onclick="increaseQuantity()">+</button>
+                        </div>
+                    
+                        <button class="add-to-cart" style="background-color: #FF6827;color: white;border: none;padding: 15px 40px;font-size: 18px;border-radius: 25px;cursor: pointer;text-transform: uppercase;font-weight: bold;">Add to Cart</button>
+                    
+                        <script>
+                            function increaseQuantity() {
+                                let qty = document.getElementById('quantity');
+                                qty.value = parseInt(qty.value) + 1;
+                            }
+                    
+                            function decreaseQuantity() {
+                                let qty = document.getElementById('quantity');
+                                if (parseInt(qty.value) > 1) {
+                                    qty.value = parseInt(qty.value) - 1;
+                                }
+                            }
+                        </script>
+                    </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </body>
+</html>

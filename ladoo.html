@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <div id="menu_row" style="display: flex;padding: 0 100px 0 100px;">
+                <div class="menu_column" style="box-shadow: 2px 2px 2px #bbb;border: 1px solid #bbb;background-color: #fff;margin: 5px;">
+            <h1 style="background-color: orange;color: #fff;text-align: center;padding: 5px;font-family: cursive;">Healthy</h1>
+            <div class="box">
+                <div id="images">
+                    <img src="http://shreevasudhafoods.com/manasvi/Shree Vasudha Foods/dinkladoo.jpg" alt="Dink Ladoo"  style="width: 125px;height: 120px;border-radius: 50%;padding: 5px;border: 2px solid orange;">
+                </div>
+                <div style="padding: 10px;">
+                    <h2>Dink Ladoo</h2>
+                    <p>Dink Ladoo is an energy-boosting Indian sweet made from edible gum, nuts, and jaggery. It is especially beneficial in winter.</p>
+                    <h3>Price: ₹160 
+                        150 gram
+                    </h3>
+                    <div class="dropdown" >
+                        <select>
+                            <option>5 pieces</option>
+                            <option>10 pieces</option>
+                            <option>15 pieces</option>
+                        </select>
+                    </div>
+                
+                    <div class="quantity-selector" style="width: 40px;text-align: center;border: none;font-size: 16px;">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <input type="text" id="quantity" value="1" readonly>
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
+                
+                    <button class="add-to-cart" style="background-color: #FF6827;color: white;border: none;padding: 15px 40px;font-size: 18px;border-radius: 25px;cursor: pointer;text-transform: uppercase;font-weight: bold;">Add to Cart</button>
+                
+                    <script>
+                        function increaseQuantity() {
+                            let qty = document.getElementById('quantity');
+                            qty.value = parseInt(qty.value) + 1;
+                        }
+                
+                        function decreaseQuantity() {
+                            let qty = document.getElementById('quantity');
+                            if (parseInt(qty.value) > 1) {
+                                qty.value = parseInt(qty.value) - 1;
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="box">
+                <div id="images1">
+                    <img src="http://shreevasudhafoods.com/manasvi/Shree Vasudha Foods/bl2.png" alt="Besan Ladoo"  style="width: 150px;height: 150px;border-radius: 50%;padding: 5px;border: 2px solid orange;">
+                </div>
+                <div style="padding: 10px;">
+                    <h3>Besan Ladoo</h3>
+                    <p>Besan Ladoo is a popular Indian sweet made from gram flour (besan), ghee, and sugar. The flour is roasted in ghee until golden brown and aromatic, then mixed with sugar and shaped into round balls. These ladoos are rich, nutty, and melt-in-the-mouth delicious!</p>
+                    <h4>Price: ₹160 
+                        150 gram
+                    </h4>
+                    <div class="dropdown">
+                        <select>
+                            <option>5 pieces</option>
+                            <option>10 pieces</option>
+                            <option>15 pieces</option>
+                        </select>
+                        <span>▼</span>
+                    </div>
+                
+                    <div class="quantity-selector" style="width: 40px;text-align: center;border: none;font-size: 16px;">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <input type="text" id="quantity" value="1" readonly>
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
+                
+                    <button class="add-to-cart" style="background-color: #FF6827;color: white;border: none;padding: 15px 40px;font-size: 18px;border-radius: 25px;cursor: pointer;text-transform: uppercase;font-weight: bold;">Add to Cart</button>
+                
+                    <script>
+                        function increaseQuantity() {
+                            let qty = document.getElementById('quantity');
+                            qty.value = parseInt(qty.value) + 1;
+                        }
+                
+                        function decreaseQuantity() {
+                            let qty = document.getElementById('quantity');
+                            if (parseInt(qty.value) > 1) {
+                                qty.value = parseInt(qty.value) - 1;
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <footer style="margin-bottom: -2rem; margin-top: 0.2rem; background-color: rgb(229, 239, 240);">
+            <div class="background5 MuiBox-root css-0" style="background: rgb(229, 239, 240);">
+                <div class="transbox5 MuiBox-root css-0">
+                    <div class="MuiContainer-root MuiContainer-maxWidthXl css-1ekb41w">
+                        <br>
+                        <br>
+                        <div class="MuiGrid-root MuiGrid-container css-1d3bbye">
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-6 MuiGrid-grid-lg-3 css-w1qv60">
+                                <a href="/"><img src="/assets/pk-logo-min-new-b40037ec.png" class="img-size-2" style="margin-top: 1rem;">
+                                </a>
+                            </div>
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-6 MuiGrid-grid-lg-3 css-w1qv60">
+                                <ul style="padding: 0px;">
+                                    <br>
+                                    <p class="MuiTypography-root MuiTypography-body1 text-bold css-1du7mld">BEST SELLERS</p>
+                                    <li class="zoom marginFooter  mt-3">
+                                        <a class="text-deco color-hover-orange" href="modak.html">Ukadiche Modak</a>
+                                    </li>
+                                    <li class="zoom marginFooter  mt-3">
+                                        <a class="text-deco color-hover-orange" href="puranpoli.html">Puranpoli</a>
+                                    </li>
+                                    <li class="zoom marginFooter  mt-3">
+                                        <a class="text-deco color-hover-orange" href="chakli.html">Bhajni Chakli</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-6 MuiGrid-grid-lg-3 css-w1qv60">
+                                <ul class="" style="padding: 0px;">
+                                    <br>
+                                    <p class="MuiTypography-root MuiTypography-body1 text-bold css-1du7mld">CATEGORIES</p>
+                                    <li class="zoom marginFooter">
+                                        <a class="text-deco color-hover-orange" href="ladoo.html">Ladoo's</a>
+                                    </li>
+                                    <li class="zoom marginFooter">
+                                        <a class="text-deco color-hover-orange" href="Traditional.html">Traditional</a>
+                                    </li>
+                                    <li class="zoom marginFooter">
+                                        <a class="text-deco color-hover-orange" href="NC.html">Namkeen</a>
+                                    </li>
+                                    <p class="MuiTypography-root MuiTypography-body1 text-bold css-1gwtwv6">OTHERS</p>
+                                    <li class="zoom marginFooter">
+                                        <a class="text-deco  color-hover-orange" href="/return-refunds">Refunds &amp; Returns</a>
+                                    </li>
+                                    <li class="zoom marginFooter">
+                                        <a class="text-deco  color-hover-orange" href="/shipping-policy">Shipping Policy</a>
+                                    </li>
+                                    <li class="zoom marginFooter">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe72mrks7yF2SZ9tXSpLdunrxWI9dLi1LjH8ishgsKhZbZpaA/viewform?usp=header" target="blank" class="text-deco ">Bulk Order</a>
+                                    </li>
+                                    <li class="zoom marginFooter">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScy12QROWzFPLBZOkoiM90gcZW8noXf559Z_InryF99qCcVTA/viewform?usp=header" target="blank" class="text-deco ">Get Franchise</a>
+                                    </li>
+                                    <li class="zoom marginFooter">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSer60yoRQ47Li-vy8_bfv5iRNZvv259LEXcjphj3rmcsJNnUg/viewform?usp=header" target="blank" class="text-deco ">Become Retailler</a>
+                                    </li>
+                                    </ul>
+                                </div>
+                                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-6 MuiGrid-grid-lg-3 css-w1qv60">
+                                    <ul style="padding: 0px;">
+                                        <br>
+                                        <li class="text-deco mt-2">
+                                            <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">Shree Vasudha Foods ECOM VENTURES PVT LTD</p>
+                                            <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3"> B-64,65,66, Platinum Springs,</p>
+                                            <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">Taloja MIDC,</p>
+                                            <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">Mumbai&nbsp;-&nbsp;410208,</p>
+                                            <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">Maharashtra , India.</p>
+                                        </li>
+                                        <li class="text-white d-flex text-bold  mt-2" style="font-size: 16px; margin-top: 1rem;">
+                                            <i class="fab fa-whatsapp-square  mx-1 mt-1 "></i>+918591336124
+                                        </li>
+                                        <li class="text-white text-bold mt-2" style="font-size: 16px; margin-top: 0.2rem;">contact@shreevasudhafoods.com</li>
+                                        <br>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <hr class="color-hr">
+                            <div class="icon-social color5 MuiBox-root css-19midj6">
+                                <h5 class="padding text-white h5">2024 All Rights Reserved. Shree Vasudha Foods Ecom Ventures Pvt Ltd. (CIN - U15100MH2022PTC377994) | 
+                                    <a class="color-orange" href="/privacy-policy">Privacy Policy </a> | 
+                                    <a class="color-orange" href="TC.html"> Terms &amp; Conditions</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>
