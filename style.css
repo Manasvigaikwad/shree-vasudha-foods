@@ -76,7 +76,7 @@ header{
 #navbar {
     display: flex;
     justify-content: space-around;
-    background: orange;
+    background: #FF6827;
 }
 
 #navbar h1{
@@ -100,6 +100,11 @@ header{
     cursor: pointer;
 }
 
+#btn:hover{
+    background: navy;
+    cursor: pointer;
+}
+
 #navbar ul li a{
     color: #fff;
     text-decoration: none;
@@ -107,6 +112,7 @@ header{
 }
 
 #phone a {
+    display: flex;
     color: #fff;
     padding: 5px 20px 5px 20px;
     border: 1px solid orange;
