@@ -11,6 +11,7 @@ body{
     overflow-x: hidden;
 }
 
+
 #hero{
     position: absolute;
     width: 100vw;
@@ -135,7 +136,8 @@ header{
 
 #mobile_menu ul{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    background-color: orange;
 }
 
 #mobile_menu ul li{
